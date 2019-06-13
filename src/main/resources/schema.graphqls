@@ -1,0 +1,15 @@
+type Query {
+    hello: String!
+    brewery(name: String): Brewery!
+}
+
+type Beer {
+    name: String!
+    brewery: Brewery!
+    alcohol: String!
+}
+
+type Brewery {
+    name: String!
+    beers: [Beer!]!
+}
